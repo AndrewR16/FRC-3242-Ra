@@ -14,29 +14,30 @@ import edu.wpi.first.math.kinematics.SwerveModuleState;
 import edu.wpi.first.wpilibj.ADIS16470_IMU;
 import edu.wpi.first.wpilibj.ADIS16470_IMU.IMUAxis;
 import frc.robot.constants.DriveConstants;
+import frc.robot.constants.MotorCanIds;
 import frc.robot.swervemodules.FlexSwerveModule;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class DriveSubsystem extends SubsystemBase {
   // Create MAXSwerveModules
   private final FlexSwerveModule m_frontLeft = new FlexSwerveModule(
-      DriveConstants.kFrontLeftDrivingCanId,
-      DriveConstants.kFrontLeftTurningCanId,
+      MotorCanIds.kFrontLeftDrivingCanId,
+      MotorCanIds.kFrontLeftTurningCanId,
       DriveConstants.kFrontLeftChassisAngularOffset);
 
   private final FlexSwerveModule m_frontRight = new FlexSwerveModule(
-      DriveConstants.kFrontRightDrivingCanId,
-      DriveConstants.kFrontRightTurningCanId,
+      MotorCanIds.kFrontRightDrivingCanId,
+      MotorCanIds.kFrontRightTurningCanId,
       DriveConstants.kFrontRightChassisAngularOffset);
 
   private final FlexSwerveModule m_rearLeft = new FlexSwerveModule(
-      DriveConstants.kRearLeftDrivingCanId,
-      DriveConstants.kRearLeftTurningCanId,
+      MotorCanIds.kRearLeftDrivingCanId,
+      MotorCanIds.kRearLeftTurningCanId,
       DriveConstants.kBackLeftChassisAngularOffset);
 
   private final FlexSwerveModule m_rearRight = new FlexSwerveModule(
-      DriveConstants.kRearRightDrivingCanId,
-      DriveConstants.kRearRightTurningCanId,
+      MotorCanIds.kRearRightDrivingCanId,
+      MotorCanIds.kRearRightTurningCanId,
       DriveConstants.kBackRightChassisAngularOffset);
 
   // The gyro sensor
