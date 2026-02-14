@@ -18,7 +18,7 @@ public class RobotContainer {
 
   // Operator controllers
   private final CommandXboxController m_pilotController = new CommandXboxController(0);
-  private final CommandXboxController m_gunnerController = new CommandXboxController(1);
+  // private final CommandXboxController m_gunnerController = new CommandXboxController(1);
 
   public RobotContainer() {
     configureBindings();

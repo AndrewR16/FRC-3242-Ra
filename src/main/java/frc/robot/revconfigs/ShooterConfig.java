@@ -1,11 +1,11 @@
 package frc.robot.revconfigs;
 
-import com.revrobotics.spark.config.SparkFlexConfig;
+import com.revrobotics.spark.config.SparkMaxConfig;
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 
 public class ShooterConfig {
-    public static final SparkFlexConfig launcherConfig = new SparkFlexConfig();
-    public static final SparkFlexConfig feederConfig = new SparkFlexConfig();
+    public static final SparkMaxConfig launcherConfig = new SparkMaxConfig();
+    public static final SparkMaxConfig feederConfig = new SparkMaxConfig();
 
     static {
         launcherConfig

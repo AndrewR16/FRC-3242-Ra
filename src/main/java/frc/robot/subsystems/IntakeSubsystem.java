@@ -2,7 +2,7 @@ package frc.robot.subsystems;
 
 import com.revrobotics.PersistMode;
 import com.revrobotics.ResetMode;
-import com.revrobotics.spark.SparkFlex;
+import com.revrobotics.spark.SparkMax;
 
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
@@ -13,7 +13,7 @@ import frc.robot.math.RangeCheck;
 import frc.robot.revconfigs.IntakeConfig;
 
 public class IntakeSubsystem extends SubsystemBase {
-    private final SparkFlex m_intakeMotor = new SparkFlex(MotorCanIds.kIntakeCanId, null);
+    private final SparkMax m_intakeMotor = new SparkMax(MotorCanIds.kIntakeCanId, null);
 
     public IntakeSubsystem() {
         m_intakeMotor.configure(IntakeConfig.intakeConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);

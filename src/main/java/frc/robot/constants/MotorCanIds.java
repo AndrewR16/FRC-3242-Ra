@@ -6,7 +6,7 @@ public class MotorCanIds {
     public static final int kHopperCanId = 2;
     public static final int kIntakeCanId = 3;
     
-    // Spark Flex CAN IDs
+    // Spark MAX CAN IDs
     public static final int kFrontLeftDrivingCanId = 11;
     public static final int kRearLeftDrivingCanId = 13;
     public static final int kFrontRightDrivingCanId = 15;

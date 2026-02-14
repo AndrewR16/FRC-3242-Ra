@@ -2,7 +2,7 @@ package frc.robot.subsystems;
 
 import com.revrobotics.PersistMode;
 import com.revrobotics.ResetMode;
-import com.revrobotics.spark.SparkFlex;
+import com.revrobotics.spark.SparkMax;
 
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
@@ -14,8 +14,8 @@ import frc.robot.revconfigs.ShooterConfig;
 
 public class ShooterSubsystem extends SubsystemBase {
     // Motors
-    private final SparkFlex m_launcherMotor = new SparkFlex(MotorCanIds.kShooterCanId, null);
-    private final SparkFlex m_feederMotor = new SparkFlex(MotorCanIds.kHopperCanId, null);
+    private final SparkMax m_launcherMotor = new SparkMax(MotorCanIds.kShooterCanId, null);
+    private final SparkMax m_feederMotor = new SparkMax(MotorCanIds.kHopperCanId, null);
 
     public ShooterSubsystem() {
         m_launcherMotor.configure(ShooterConfig.launcherConfig, ResetMode.kResetSafeParameters,

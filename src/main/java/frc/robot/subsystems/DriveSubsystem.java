@@ -15,27 +15,27 @@ import edu.wpi.first.wpilibj.ADIS16470_IMU;
 import edu.wpi.first.wpilibj.ADIS16470_IMU.IMUAxis;
 import frc.robot.constants.DriveConstants;
 import frc.robot.constants.MotorCanIds;
-import frc.robot.swervemodules.FlexSwerveModule;
+import frc.robot.swervemodules.MAXSwerveModule;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class DriveSubsystem extends SubsystemBase {
   // Create MAXSwerveModules
-  private final FlexSwerveModule m_frontLeft = new FlexSwerveModule(
+  private final MAXSwerveModule m_frontLeft = new MAXSwerveModule(
       MotorCanIds.kFrontLeftDrivingCanId,
       MotorCanIds.kFrontLeftTurningCanId,
       DriveConstants.kFrontLeftChassisAngularOffset);
 
-  private final FlexSwerveModule m_frontRight = new FlexSwerveModule(
+  private final MAXSwerveModule m_frontRight = new MAXSwerveModule(
       MotorCanIds.kFrontRightDrivingCanId,
       MotorCanIds.kFrontRightTurningCanId,
       DriveConstants.kFrontRightChassisAngularOffset);
 
-  private final FlexSwerveModule m_rearLeft = new FlexSwerveModule(
+  private final MAXSwerveModule m_rearLeft = new MAXSwerveModule(
       MotorCanIds.kRearLeftDrivingCanId,
       MotorCanIds.kRearLeftTurningCanId,
       DriveConstants.kBackLeftChassisAngularOffset);
 
-  private final FlexSwerveModule m_rearRight = new FlexSwerveModule(
+  private final MAXSwerveModule m_rearRight = new MAXSwerveModule(
       MotorCanIds.kRearRightDrivingCanId,
       MotorCanIds.kRearRightTurningCanId,
       DriveConstants.kBackRightChassisAngularOffset);
