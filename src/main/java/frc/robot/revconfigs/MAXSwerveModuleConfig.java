@@ -5,7 +5,7 @@ import com.revrobotics.spark.config.AbsoluteEncoderConfig;
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 import com.revrobotics.spark.config.SparkMaxConfig;
 
-import frc.robot.constants.SwerveModuleConstants;
+import frc.robot.constants.MAXSwerveModuleConstants;
 
 public class MAXSwerveModuleConfig {
     public static final SparkMaxConfig drivingConfig = new SparkMaxConfig();
@@ -13,11 +13,11 @@ public class MAXSwerveModuleConfig {
 
     static {
         // Use module constants to calculate conversion factors and feed forward gain.
-        double drivingFactor = SwerveModuleConstants.kWheelDiameterMeters * Math.PI
-                / SwerveModuleConstants.kDrivingMotorReduction;
+        double drivingFactor = MAXSwerveModuleConstants.kWheelDiameterMeters * Math.PI
+                / MAXSwerveModuleConstants.kDrivingMotorReduction;
         double turningFactor = 2 * Math.PI;
         double nominalVoltage = 12.0;
-        double drivingVelocityFeedForward = nominalVoltage / SwerveModuleConstants.kDriveWheelFreeSpeedRps;
+        double drivingVelocityFeedForward = nominalVoltage / MAXSwerveModuleConstants.kDriveWheelFreeSpeedRps;
 
         drivingConfig
                 .idleMode(IdleMode.kBrake)
